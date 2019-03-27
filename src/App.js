@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 import LoginContainer from './login/LoginContainer';
 import { modal } from './actions/modal'
 
-
+export const baseUrl = 'https://market-app-server.herokuapp.com'
 class App extends Component {
   render() {
     return (

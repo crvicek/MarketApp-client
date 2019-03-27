@@ -2,25 +2,36 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Login from './Login';
 import { modal } from '../actions/modal'
+import { login } from '../actions/login'
 
 
 class LoginContainer extends React.Component {
   state = {
+    username: '',
+    email: '',
+    password: '',
   }
 
-  onChange = (add) => {
+  onChange = (event) => {
     this.setState({
+      [event.target.name]: event.target.value
     })
   }
 
-  onSubmit = (add) => {
-    add.preventDefault()
+  onSubmit = (event) => {
+    console.log('Submitted')
+    event.preventDefault()
+    this.props.login(this.state)
     this.setState({
+      username: '',
+      email: '',
+      password: '',
     })
-    //this.props.createAdd(this.state)
+    this.props.modal()
   }
 
   render() {
+    console.log('mystate:', this.state)
     return (<Login
       onSubmit={this.onSubmit}
       onChange={this.onChange}
@@ -36,4 +47,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { modal })(LoginContainer)
+export default connect(mapStateToProps, { modal, login })(LoginContainer)
