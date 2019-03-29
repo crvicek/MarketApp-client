@@ -1,32 +1,28 @@
 .Small {
   border: lightgray solid 0.05rem;
   border-radius: 0.5rem;
-  height: 20rem;
-  width: 15rem;
+  height: 15rem;
+  width: 10rem;
   margin: 1rem;
   overflow: hidden;
   box-sizing: content-box;
-  /* transition: 0.2s;
-  transition-timing-function: ease-in-out; */
   background-color: lightgray;
 }
 
 .Small:hover {
-  /* border: white solid 0.1rem; */
   box-shadow: 0 0 1rem gray;
-  /* transform: scale(1.05, 1.05) */
 }
 
 .SmallCardImg {
-  height: 15rem;
-  width: 15rem;
+  height: 10rem;
+  width: 10rem;
   object-fit: cover;
   border: 0px
 }
 
 .Small h1 {
-  font-size: 1.5rem;
-  height: 2rem;
+  font-size: 1.2rem;
+  height: 1.3rem;
   color: #282c34;
   overflow: hidden;
   padding: 0 1rem;
@@ -35,6 +31,7 @@
 .Title {
   width: 100%;
   text-align: center;
+  font-size: 2rem;
 }
 
 .Description {
@@ -73,6 +70,7 @@ a:hover {
   padding: 0 2rem;
   background-color: #282c34;
 }
+
 .Nav-Title {
   justify-content: flex-start;
 }
