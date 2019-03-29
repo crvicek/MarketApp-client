@@ -13,12 +13,12 @@ This is a client side of [Market App - Server](https://github.com/crvicek/Market
 ToDo List:
 
 - [x] User can login
-- [] User can signup
-- [] User can edit user info
+- [ ] User can signup
+- [ ] User can edit user info
 - [x] Everybody can view ads
 - [x] Logged in user can post ads
-- [] Logged in user can edit/delete ads
-- [] Styling
+- [ ] Logged in user can edit/delete ads
+- [ ] Styling
 
 
 
