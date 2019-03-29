@@ -1,12 +1,10 @@
-const initState = {}
+const initState = []
 
 export default (state = initState, action = {}) => {
   switch (action.type) {
-    case 'GET_ADS':
-      return {
-        ...state,
-        ads: action.payload
-      }
+
+    case 'ADS_FETCHED':
+      return action.payload
 
     default:
       return state

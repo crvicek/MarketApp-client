@@ -31,14 +31,15 @@ class LoginContainer extends React.Component {
   }
 
   render() {
-    console.log('mystate:', this.state)
-    return (<Login
-      onSubmit={this.onSubmit}
-      onChange={this.onChange}
-      values={this.state}
-      show={this.props.show}
-      close={this.props.modal}
-    />)
+    return (
+      <Login
+        onSubmit={this.onSubmit}
+        onChange={this.onChange}
+        values={this.state}
+        show={this.props.show}
+        close={this.props.modal}
+      />
+    )
   }
 }
 const mapStateToProps = (state) => {
