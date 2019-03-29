@@ -1,7 +1,8 @@
 # Market App - Client
 
 This is a simple small ads market app for exercise.
-It is using:
+
+## Technologies used:
 - React
 - Redux
 - React Router
@@ -10,8 +11,7 @@ It is using:
 
 This is a client side of [Market App - Server](https://github.com/crvicek/MarketApp-server)
 
-User stories / ToDo List:
-
+## User stories / ToDo List:
 - [x] User can login
 - [ ] User can signup
 - [ ] User can edit user info
