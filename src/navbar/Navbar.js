@@ -1,18 +1,27 @@
-import React from 'react'
-import { Navbar, Nav, } from 'react-bootstrap'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { modal } from '../actions/modal'
 
-export default function NavBar(props) {
-  return (
-    <Navbar bg="dark" variant="dark"  >
-      <Navbar.Brand href="/">Market App</Navbar.Brand>
-      <Nav className="justify-content-end" >
-        <Nav.Item>
-          <Nav.Link href="/new">Sell</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link onClick={props.onClick} >Login</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </Navbar>
-  )
+class NavBar extends Component {
+  render() {
+    return (
+      <div className='NavBar' >
+        <h1 className='NavBar Title'>
+          <Link to='/' >
+            Market App
+      </Link>
+        </h1>
+        <span className='NavBar Menu' >
+          <Link to='/new' >Sell</Link>
+          <Link to={true} onClick={this.props.modal} >Login</Link>
+        </span>
+      </div>
+    )
+  }
 }
+const mapStateToProps = (state) => ({
+  modal: state.modal
+})
+
+export default connect(mapStateToProps, { modal })(NavBar)

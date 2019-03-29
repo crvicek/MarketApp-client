@@ -1,11 +1,12 @@
-import * as request from 'superagent'
-
 const initState = {}
 
 export default (state = initState, action = {}) => {
   switch (action.type) {
-   
-    case 'GET_ADD':
+
+    case 'AD_FETCHED':
+      return state = action.payload
+
+    case 'AD_CREATED':
       return state = action.payload
 
     default:

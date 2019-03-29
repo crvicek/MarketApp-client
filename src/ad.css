@@ -1,0 +1,84 @@
+.Small {
+  border: lightgray solid 0.05rem;
+  border-radius: 0.5rem;
+  height: 15rem;
+  width: 10rem;
+  margin: 1rem;
+  overflow: hidden;
+  box-sizing: content-box;
+  background-color: lightgray;
+}
+
+.Small:hover {
+  box-shadow: 0 0 1rem gray;
+}
+
+.SmallCardImg {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  border: 0px
+}
+
+.Small h1 {
+  font-size: 1.2rem;
+  height: 1.3rem;
+  color: #282c34;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.Title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Description {
+  text-align: left;
+}
+
+.Header {
+  height: 10rem;
+  width: 100%;
+}
+
+.AdsContainer {
+  /* border: white solid 0.1rem; */
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.NavBar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #282c34;
+}
+
+.Nav-Title {
+  justify-content: flex-start;
+}
+.Menu {
+  justify-content: flex-end;
+}
+
+.Menu * {
+  padding: 1rem;
+}
+
