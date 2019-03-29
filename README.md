@@ -10,7 +10,7 @@ It is using:
 
 This is a client side of [Market App - Server](https://github.com/crvicek/MarketApp-server)
 
-ToDo List:
+User stories / ToDo List:
 
 - [x] User can login
 - [ ] User can signup
@@ -19,7 +19,7 @@ ToDo List:
 - [x] Logged in user can post ads
 - [ ] Logged in user can edit/delete ads
 - [ ] Styling
-
+- [ ] Deploy to Netlify
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
