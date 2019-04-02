@@ -11,14 +11,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        hello there
-        {/* <NavBar />
+        <NavBar />
         <LoginContainer />
         <div>
           <Route exact path="/" component={AdsContainer} />
           <Route path="/new" component={CreateAdContainer} />
           <Route path="/ads/:id" component={AdContainer} />
-        </div> */}
+        </div>
       </div>
     );
   }
