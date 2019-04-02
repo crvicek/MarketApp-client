@@ -1,4 +1,4 @@
-# Market App - Client
+# Market App - Client (work in progress)
 
 This is a simple small ads market app for exercise.
 
