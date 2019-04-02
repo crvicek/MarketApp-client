@@ -19,7 +19,6 @@ class LoginContainer extends React.Component {
   }
 
   onSubmit = (event) => {
-    console.log('Submitted')
     event.preventDefault()
     this.props.login(this.state)
     this.setState({
